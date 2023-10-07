@@ -1,0 +1,32 @@
+welcome to git
+git svc
+staging area
+local repo
+remote repo
+stash
+
+-----------------------------------------
+
+adding to staging area 
+
+git add .
+
+how to add to local repository
+
+git commit -m "message"
+
+how to add to remote repository
+
+git push origin main
+
+
+
+
+
+
+
+
+
+
+
+
