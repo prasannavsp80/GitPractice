@@ -1,0 +1,362 @@
+Object Oriented Programming : 
+
+It is an approach that provides a way of modularizing
+programming, that which can be used to create 
+small partition memory area for both data and objects
+which are to be used as templates for creating copies
+of such modules on demand. 
+
+Object : An object is a real world entity, that which possess 3 characterstics known as 
+
+	(i) State
+
+	(ii) Behaviour
+
+	(iii) Identity 
+
+
+OOPS features : 
+________________
+
+(i) Encapsulation : Wrapping up of data and functions into a single unit known as encapsulation. 
+
+(ii) Abstraction : Hiding the irrelevant details of an of an object that do not contribute to its essential characterstics known as Abstraction. 
+
+*** Encapsualation focuses on showing the relevant details, where abstraction focuses on hiding the irrelevant details ***
+
+(iii) Inheritance : Deriving a new entity from already existing entity known as inheritance, through inheritance we can reduce the size of the program. 
+
+(iv) Polymorphism : The ability to take more than one form known as polymorphism. 
+
+class : A class is a template or blueprint, that which contains combination of data members and member functions. Members of the class can be accessable by using instance of the class. 
+
+class class_name
+{
+    data members;
+    member functions;
+}
+
+Why Java : 
+
+   (i) Platform Independence : Write Once and Run Anywhere. 
+
+   (ii) Console, Windows, Web, Service Oriented, Mobile Apps
+
+  (iii) Packages : Contains group of related classes and interfaces that which belongs to one common group.  If you want to overcome the naming conflicts between classes then we need the help of packages. 
+
+Java Features : 
+________________
+
+(i) simple : Java uses simple C/C++ syntaxes, as a programmer no need to take care of internal details like memory management etc...as how much memory allocated to run the program, the same amount of memory will be reallocated automatically. 
+
+(ii) object oriented : Java supports all object oriented programming features. 
+
+(iii) Compiled and Interpreted : Java Programs are compiled first, during compilation java code will be converted into bytecode, then .class file will be created.  In interpretation it reads the bytecode line by line and executes. 
+
+(iv) Portable : Ability to run the program without changing the source code, java programs are programs that can run on any env. without changing the source code. 
+
+(v) Securable : Java Implements various levels of security as 
+
+	(a) Compiler Level Security 
+
+	(b) Bytecode Level Security 
+
+	(c) Class Loader Level 
+
+(vi) Distributed : By using Java, we can make all distributed and robust applications. 
+
+Java Architecture : 
+____________________
+
+1) Java Program : Java code that which stored with extension .java 
+
+2) Java Class : Java Code after compilation its converted into bytecode, then .class file will be created. 
+
+3) JVM (Java Virtual Machine) 
+
+	It contains various components as 
+
+	(i) Class Loader : Used to load all classes that which are required to run the program. There are 2 types of class loaders known as 
+
+		(a) Primordial Class Loaders : Used to load all system classes which are required to run the program. 
+
+		(b) Class Loader Objects : Used to load all custom classes (user-defined) classes which are required to run the program. 
+
+	(ii) JIT Compiler (Just-In Time) : used to convert bytecode into CPU specific format. 
+
+	(iii) Execution Manager : Contains group of programs which are ready to run, where we can execute the program. Before execution it needs to undergone the security authentication. 
+
+4) Java API (Application Program Interface) : It provides runtime env. that which allows you to run the java program. 
+
+    It contains 2 parts as
+
+	(a) JDK (Java Development Kit) It is a software that which allows you to compile/run the given program. It used to initiate the env, that which allows you to run the program. 
+
+How to set the path in command prompt of jdk is 
+
+set path=%path%;C:\Program Files\Java\jdk1.8.0_271\bin;
+
+	(b) JRE (Java Runtime Environment) : Provides env, that which allows you to run the java program. 
+
+Compiling and Execution Procedure of Java Application : 
+_______________________________________________________
+
+(i) When you compile any Java Application, at first instead of converting into CPU specific code, first its converted into Bytecode. 
+
+JVM first converts the code into bytecode, then (.class) file will be created. 
+
+(ii) Then JVM sends this file to the class loader. 
+
+(iii) In class loader, JIT compiler that which converts the byte code into CPU specific format. 
+
+(iv) Then it would be send to execution manager. 
+
+(v) Execution Manager contains QUEUE of programs which are ready to run, where we can execute the program. 
+
+*** Before execution it needs to undergone the security authentication ***
+
+main() is mandetory method in java to run the java program. You can define method main() as 
+
+public static void main(String[] args) {
+...
+...
+...
+}
+
+main() must be static as no class object supposed to call the method main(). 
+
+You can display any value or message by using 
+
+System.out.println() 
+
+	System -> class
+	out -> Console
+	println() -> Method. 
+
+System.out.println("Welcome to Java Programming...");
+
+Access Modifiers : 
+__________________
+
+(i) private : Allows you to access members within current class. 
+
+(ii) public : Allows you to access members in entire appliation. 
+
+(iii) protected : Allows you to access members within current/derived class. 
+
+(iv) friendly : By default java possess friendly access modifier, allows you to access members within all classes of current package. 
+
+To compile java program, 
+
+javac file_name.java
+
+To run the java program,
+
+java file_name 
+
+What is the difference the between i++ and ++i 
+
+PostIncrement (vs) PreIncrement 
+
+PostIncrement it first initializes the value 
+and then increments, so in current state we never
+get updated value, but in PreIncrement first it
+increments and assigns the value as we can get
+updated value in the current state only. 
+
+PostIncrement updated value will be reflected 
+after 
+	(i) Changing operator/In next statement. 
+
+Data Types : 
+_____________
+
+There are 2 types of data types as 
+
+	(i) Value Types : int, float, double, char, boolean etc...
+
+	(ii) Reference Types : String, Object and Custom Types 
+
+*** value types will be stored in STACK memory and reference types will be stored in HEAP memory ***
+
+*** The default package in java is java.lang, as no need to import this as it comes automatically *** 
+
+*** The top-level class in java is, Object, and the full signature of Object class is, java.lang.Object ***
+
+
+Scanner is the class, that which allows you to read the data from keyboard/file etc...
+
+It is from util package, and you can import Scanner as 
+
+import java.util.Scanner;
+
+To read any integer, use nextInt()
+To read any String, use next()
+To read any String with spaces use nextLine() 
+
+Control Structures : 
+_____________________
+
+Used to define the flow of the program. 
+
+There are 2 types of control structures known as
+
+(i) Branching
+
+  if...else : Executes the statement(s) based on the condition. 
+
+	if (condition) {
+	   statement(s);
+	} else {
+	   statement(s);
+	}
+
+// Write a Program to Check given no is +ve or -ve
+
+switch...case : Used to define the menu-driven programs. 
+
+switch(expression) {
+   case expresssion1 : 
+		statement(s);
+   case expression2 : 
+		statement(s);
+   ...
+   ...
+   ...
+
+   default :
+	statement(s);
+}
+
+(ii) Looping 
+
+while loop : This loop executes all the statement(s) repeatedly until the condition remains true, if the condition remains false, then it comes out of the loop. For every loop, basically there are 3 phases as 
+
+	(i) Initialization
+
+		Initialization performed at the beginning of the loop.
+
+	(ii) Condition
+
+		Condition performed at the conditional part of the loop.
+
+	(iii) Increment/Decrement 
+
+		Performed before closing the loop. 
+
+while(condition) {
+...
+...
+...
+}
+
+-- Write a Program to Print message 10 times. 
+
+for loop : This loop executes all the statement(s) repeatedly until the condition remains true, if the condition reamins false, then it comes out of the loop. 
+
+for(initialization;condition;increment/decrement) {
+...
+...
+...
+}
+
+Array : An array is the finite ordered set of homogeneous elements, means all the elements belongs to same data type. All the elements of array are stored in successive memory locations. 
+
+int[] a = new int[]{3,55,1,4,12};
+
+a[0]=3;
+a[1]=55;
+a[2]=1;
+a[3]=4;
+a[4]=12;
+
+int[] a = new int[] {4,21,66,33,93};
+//		for(int i=0;i<a.length;i++) {
+//			System.out.println(a[i]);
+//		}
+		for (int i : a) {
+			System.out.println("I value  " +i);
+		}
+
+The above loop, we don't find any initialization/condition/increment-decrement. How the foreach loop is getting executed ???
+
+At first i points to the first element in Array A, after processing first element it checks next element is there or not by using hasMoreElements(), if hasMoreElements() returns true, it moves to the next element by using nextElement(). It repeats as soon as hasMoreElements() returns true. 
+
+Strings are immutable as once they are assigned we cannot change the value by using any string method automatically, we need to assign to new string then only we can get the updated value.
+
+You can define a method as 
+
+access_modifier retun_type method_name(par(s)) {
+...
+...
+...
+}
+
+To Create an object to the class, 
+
+class_name object = new class_name();
+
+There are 2 types of memories known as
+
+(i) Stack
+
+(ii) Heap 
+
+*** Value types will be stored in STACK memory and refernce types will be stored in HEAP memory ***
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
