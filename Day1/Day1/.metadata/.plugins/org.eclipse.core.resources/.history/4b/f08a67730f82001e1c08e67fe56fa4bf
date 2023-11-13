@@ -1,0 +1,17 @@
+package com.java.day1;
+
+public class StrExamples {
+	public static void main(String[] args) {
+		String str = "Welcome to Java Programming...Trainer Prasanna...";
+		System.out.println("Length of String is  " +str.length());
+		// indexOf() : used to display first occurrence of given char.
+		System.out.println("First Occurrence of char 'o' is  " +str.indexOf("o"));
+		// charAt(n) : Display the char at particular position. 
+		System.out.println("Char at 5th position  " +str.charAt(5));
+		// toLowerCase() : used to convert to Lower-Case
+		System.out.println("Lower Case  " +str.toLowerCase());
+		// toUpperrCase() : used to convert into Upper-Case 
+		System.out.println("Upper Case  " +str.toUpperCase());
+		System.out.println("Part of String  " +str.substring(11,21));
+	}
+}

@@ -1,0 +1,22 @@
+package com.java.day1;
+
+import java.util.Scanner;
+
+/**
+ * Program to print Even Numbers of Given Range
+ * @author lenovo
+ */
+
+public class LoopExample2 {
+	public static void main(String[] args) {
+		int n;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter N value   ");
+		n = sc.nextInt();
+		int i=0;
+		while(i < n) {
+			i+=2;
+			System.out.println("Even Number  " +i);
+		}
+	}
+}

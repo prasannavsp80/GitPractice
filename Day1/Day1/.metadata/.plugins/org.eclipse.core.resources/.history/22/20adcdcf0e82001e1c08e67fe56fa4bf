@@ -1,0 +1,8 @@
+package com.java.day1;
+
+public class StrExamples {
+	public static void main(String[] args) {
+		String str = "Welcome to Java Programming...Trainer Prasanna...";
+		System.out.println("Length of String is  " +str.length());
+	}
+}

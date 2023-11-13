@@ -1,0 +1,24 @@
+package com.java.day1;
+
+public class Example1 {
+
+	public void sayHello() {
+		System.out.println("Welcome to java Programming...");
+	}
+	
+	public void company() {
+		System.out.println("For Deloitte...");
+	}
+	
+	public void timing() {
+		System.out.println("Its from 9.30 to 6.30...");
+	}
+	
+	public static void main(String[] args) {
+		// How to Create an object 
+		Example1 obj = new Example1();
+		obj.sayHello();
+		obj.company();
+		obj.timing();
+	}
+}

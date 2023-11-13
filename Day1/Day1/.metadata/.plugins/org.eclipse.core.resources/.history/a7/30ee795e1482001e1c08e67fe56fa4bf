@@ -1,0 +1,9 @@
+package com.java.day1;
+
+public class StrEx {
+
+	public static void main(String[] args) {
+		String s1="Abdul",s2="Hari",s3="Riya",s4="Abdul";
+		
+	}
+}

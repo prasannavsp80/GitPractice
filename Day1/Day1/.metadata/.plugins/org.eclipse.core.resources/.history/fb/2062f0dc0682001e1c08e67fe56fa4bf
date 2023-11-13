@@ -1,0 +1,12 @@
+package com.java.day1;
+
+/**
+ * Program to Display Factorial of Given No...
+ * @author lenovo
+ *
+ */
+public class Fact {
+	public static void main(String[] args) {
+		
+	}
+}
