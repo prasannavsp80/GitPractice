@@ -1,6 +1,4 @@
 
-
-
 What is the purpose of do...while loop : This loop executes the statements atleast once and then it checks the condition. If the condition true it repeats the statements, if the condition remains false, then it comes out of the loop. 
 
 The difference between while loop and do...while is 
@@ -81,6 +79,95 @@ There are 2 types of constructors known as
 (i) static constructor : These are called class constructors which are used to initilize the static variables of the class. These constructors are invoked automatically before control reaches the entry point. These constructors cannot be overloaded. *** In Java, we don't have any static constructors, as static { } acts as static constructor ***
 
 (ii) instance constructor : These are the constructors that which are invoked automatically once the instance of the class created. These constructors can be overloaded. 
+
+Inheritance : 
+
+The concept of deriving a new class from already existing class known as inheritance.  The class which derived known as derived class, the class from which its derived known as base class. Through inheritance we can reduce the size of the program. 
+
+You can implement inheritance, by using extends Keyword. 
+
+class First {
+....
+....
+}
+
+class Second extends First {
+...
+...
+...
+}
+
+Once you create an object to Second class, then you can access all public/protected and friendly members of base class. 
+
+super keyword : If you want to pass values from derived class to base class, then we need the help of super keyword.  It has 2 forms as 
+
+	(i) super as a keyword
+
+	(ii) super as a constructor 
+
+
+static variable : If you declare any variable in class, that belongs to the object of the class, but if a class needs to have some variables, then we need the help of static variable. 
+
+
+static variables are variables, that which retains values irrespective of type of object. 
+
+final keyword : 
+
+If you want to declare/assign variable that not to be
+modifier forever, then we can make that as final.
+
+If you want to stop any class to be inherited further,
+then we need to make the class as final class. 
+
+if you want a method not to be redefined further in 
+derived class, then make a method as final. 
+
+Final Class cannot be inherited
+Final variable cannot be updated
+Final method cannot be redefined in derived class.
+
+Abstract Class : A class, that which can be created, but not implemented and instantiated known as abstract class. Abstract class contains abstract and non-abstract methods, abstract methods needs to be overrided mandetorily by the derived class. 
+
+abstract class Test {
+   abstract method1();
+}
+
+Who falls under abstract class Test, needs to override
+method1() mandetory. 
+
+Abstract Class will have constructor(s) or not ???
+
+Yes abstract class is a class except direct objects,
+everthing are there.
+
+interfaces : Java does not support the concept of multiple inheritance, to achieve this we need the help of interfaces. An interface contains method declaration, and the implementation can be done in the corresponding class, You can add more than one interface to the particular class. 
+
+
+Difference between interface and abstract class : 
+_________________________________________________
+
+-> An abstract class contains both abstract and non-abstract methods, where interface contains only abstract methods. 
+
+-> interface methods are public and abstract by default. 
+
+-> Multiple inheritance can be achieved by using interfaces
+
+-> An interface can be called from anywhere to anywhere. 
+
+You can an interface to the class, by using implements keyword. 
+
+class class_name implements inteface {
+...
+...
+...
+}
+
+Will interface contains variables or not ???
+
+Interface contains variable, but by default they 
+are final, as we cannot modify them. 
+
+
 
 
 
