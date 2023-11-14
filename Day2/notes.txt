@@ -1,0 +1,105 @@
+
+
+
+What is the purpose of do...while loop : This loop executes the statements atleast once and then it checks the condition. If the condition true it repeats the statements, if the condition remains false, then it comes out of the loop. 
+
+The difference between while loop and do...while is 
+
+-> Min. Execution of while loop is zero times
+
+-> Min. Execution of do...while loop is one time. 
+
+syntax : 
+
+do {
+...
+...
+...
+} while(condition);
+
+this keyword : 
+
+
+public class Example5 {
+
+	int i;
+	public void show(int i) {
+		
+	}
+	public static void main(String[] args) {
+		
+	}
+}
+
+
+In above code the class variable name(i) and
+passing parameter name(i) both are same. Now, we need to overocome the ambiguity issue 
+
+if you write as 
+
+	public void show(int i) {
+	   i=i;		
+	}
+
+It leads to relative referencing as the output will be as 0 as default value to be assiged to the same. 
+
+To overcome this problem we need the help of this keyword. 
+
+this keyword used to initialize the variables of the class. 
+
+Method Overloading :  The concept of using the same method name w.r.t. different data types or different parameters known as method overloading.  Here, the method name must be same, but no.of parameters or type of parameters we are using here are different. 
+
+class Test {
+    int a,b;
+    a=5;
+    b=7;
+}
+
+The above code returns compile time error, as we cannot write any code inside the class directly, as class contains only member variables and methods. To overcome this we need the help of constructors. 
+
+Constructors : 
+_______________
+
+A constructor is a special member, which used to initialize the member variables of the class. It is special because it has the same name as that of class name. 
+
+Rules : 
+_______
+
+(i) It will not contains any return type
+
+(ii) It will not return any value 
+
+(iii) It will be invoked automatically one the instance of the class Created. 
+
+(iv) A constructor can be overloaded. 
+
+Types of Constructors : 
+_______________________
+
+There are 2 types of constructors known as
+
+(i) static constructor : These are called class constructors which are used to initilize the static variables of the class. These constructors are invoked automatically before control reaches the entry point. These constructors cannot be overloaded. *** In Java, we don't have any static constructors, as static { } acts as static constructor ***
+
+(ii) instance constructor : These are the constructors that which are invoked automatically once the instance of the class created. These constructors can be overloaded. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
