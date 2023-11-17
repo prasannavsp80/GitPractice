@@ -1,0 +1,89 @@
+Web Application : These are the applications that which are to be called from various places rather than where they are created. 
+
+If you want to make any distributed or robust applications, then we need the help of web applications. 
+
+You can create web applications in 2 ways as 
+
+(i) Scripting Langauges 
+
+(ii) Programming Languages 
+
+What is the difference between scripting langauges and programming languages : 
+
+1) Scripting Languages are langauges, that which are interpreted directly, so during runtime they takes lot of time to execute. 
+
+HTML, Javascript, JQuery, CSS, CSS3 etc...
+
+2) Programming langauges are langauges that which are compiled first, so during runtime they takes very less time to execute. 
+
+Dotnet, Java, Python etc...
+
+
+What is Client-Side Scripting 
+
+What is Server-Side Scripting
+
+HTML (HyperText Markup Language) 
+
+Used to create any sample web pages. 
+
+We can define all the elements using tags. 
+
+To start with html, 
+
+<html>
+</html> : To start with HTML, we need to add the elements inside that tag. 
+
+<head>
+</head> : Contains the global information about entire web page like stylesheet, javscript code, heading files etc...
+
+<title> </title> : displays heading on title bar. 
+
+<body> 
+</body> : Contains actual content for the given page. 
+
+Actual HTML Structure is : 
+__________________________
+
+<html>
+  <head> ......
+	....
+	...
+  </head>
+<title> Sample Title</title>
+<body>
+...
+...
+</body>
+</html>
+
+<p> Used to start new paragraph </p>
+
+Anchor tag : If you want to link one page to another page, then we need the help of anchor tag. 
+
+Syntax : 
+
+<a href="targetPage">Display Text</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
