@@ -1,0 +1,5 @@
+welcome to branching
+git commit
+git pull
+git push
+git add
