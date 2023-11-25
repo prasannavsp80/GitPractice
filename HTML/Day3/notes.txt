@@ -1,0 +1,30 @@
+What is HTML 
+
+Definition language  :
+
+Allows you to define term and description. 
+
+You can start definition language using
+
+<dl>
+</dl>
+
+<dt> : Definition Term
+
+<dd> : Definition Description
+
+Forms allows you to accept data from keyboard. 
+
+You can start with forms by using 
+
+<form> </form> tag. 
+
+We have various input controls as 
+
+<input type="text" /> TextBox
+
+<input type="password" /> Password
+<input type="radio" /> Radio button
+<input type="submit" /> Submit Button
+<input type="button" /> Sample Button
+
